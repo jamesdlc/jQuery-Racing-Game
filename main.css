@@ -1,9 +1,6 @@
 
-.board{
-  height: 600px;
-  width: 1300px;
+body{
   background-color: black;
-  position:fixed
 }
 .p1{
   top: 205px;
@@ -28,10 +25,34 @@
 .track{
   top: 200px;
   height: 200px;
-  width: 1300px;
+  width: 1350px;
   background-color: white;
   position: fixed;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .winning{
   content:url(pictures/winningkhaled.png);
+}
+
+.btn{
+  top: 700px;
+}
+.score{
+  top: 420px;
+  left: 1050px;
+  position: fixed;
+  height: 250px;
+  width: 300px;
+  background-color: blue;
+  text-align: center;
+}
+.p1score{
+
+}
+.p2score{
+  left: 1050px;
+  position: fixed;
+
 }
