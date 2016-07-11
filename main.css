@@ -2,26 +2,6 @@
 body{
   background-color: black;
 }
-.p1art{
-  top: 205px;
-  position: fixed;
-  left: 0px;
-  height: 90px;
-  width: 90px;
-}
-.p2art{
-  top: 305px;
-  position: fixed;
-  left: 0px;
-  height: 90px;
-  width: 90px;
-}
-.startingpiece{
-  content:url(pictures/startingkhaled.png);
-}
-.addKhaledP1{
-  content:url(pictures/madkhaled.png);
-}
 .track{
   top: 200px;
   height: 200px;
@@ -32,10 +12,7 @@ body{
   margin-left: auto;
   margin-right: auto;
 }
-.winning{
-  content:url(pictures/winningkhaled.png);
-}
-.score{
+.scoreboard{
   top: 420px;
   left: 1050px;
   position: relative;
@@ -44,13 +21,35 @@ body{
   background-color: blue;
   text-align: center;
 }
+.p1sizing{
+  top: 205px;
+  position: fixed;
+  left: 0px;
+  height: 90px;
+  width: 90px;
+}
+.p2sizing{
+  top: 305px;
+  position: fixed;
+  left: 0px;
+  height: 90px;
+  width: 90px;
+}
 .p1score{
   position: absolute;
-
 }
 .p2score{
   left: 150px;
   position: absolute;
+}
+.starting{
+  content:url(pictures/startingkhaled.png);
+}
+.losing{
+  content:url(pictures/madkhaled.png);
+}
+.winning{
+  content:url(pictures/winningkhaled.png);
 }
 button{
   position:fixed;

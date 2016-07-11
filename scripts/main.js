@@ -12,9 +12,8 @@ $(document).ready(function(){
 function Player(name, key1, key2, classSelector) {
   this.name = name;
   this.keys = [key1, key2]; //array that accepts ASCII codes
-  this.$selector = $("." + classSelector); // this.$racer to indicate jQuery (naming convention)
+  this.$selector = $("." + classSelector); // $ to indicate  attribute is accessing jQuery (naming convention)
   this.wins = 0;
-  this.losses = 0;
   this.move = function(){
     this.$selector.css("left",("+=23px"));
   };
@@ -36,22 +35,22 @@ function playerMoveListener(player1, player2){ //function will exectute Player.m
 function winChecker(p){
   if (p.$selector.offset().left > 600){
     p.wins += 1;
-    console.log(p.move.queue);
-    p.$selector.removeClass("p1");
+
 }
 }
 function imageChanger(player1, player2){ //function that changes DJ Khaled's facial expression depending on winning or losing
   if (player1.$selector.offset().left < player2.$selector.offset().left){
-     player1.$selector.removeClass("startingpiece").addClass("addKhaledP1");
-     player2.$selector.removeClass("addKhaledP1").addClass("startingpiece");
+     player1.$selector.removeClass("starting").addClass("losing");
+     player2.$selector.removeClass("losing").addClass("starting");
    }
   else if (player1.$selector.offset().left > player2.$selector.offset().left){
-    player2.$selector.removeClass("startingpiece").addClass("addKhaledP1");
-    player1.$selector.removeClass("addKhaledP1").addClass("startingpiece");
+    player2.$selector.removeClass("starting").addClass("losing");
+    player1.$selector.removeClass("losing").addClass("starting");
   }
 }
+//potential reset function
 // function stopMvmt(p) {
-//     p.selector.clearQueue();
-//     p.selector.clearQueue();
+//     p.$selector.clearQueue();
+//     p.$selector.clearQueue();
 //     $(document).off("keyup");
 //   }
