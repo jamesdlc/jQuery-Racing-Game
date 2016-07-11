@@ -5,7 +5,7 @@ body{
 .track{
   top: 200px;
   height: 200px;
-  width: 1350px;
+  width: 1500px;
   background-color: white;
   position: fixed;
   display: block;
@@ -44,6 +44,12 @@ body{
   text-align: center;
   font-family: 'Rock Salt', cursive;
   position: relative;
+}
+.showWinner{
+  position: fixed;
+  top: 500px;
+  left: 530px;
+  font-size: 50px;
 }
 /*.p1score{
   position: absolute;
