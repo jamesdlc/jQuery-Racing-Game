@@ -42,17 +42,17 @@ body{
 .score{
   top: 420px;
   left: 1050px;
-  position: fixed;
+  position: relative;
   height: 250px;
   width: 300px;
   background-color: blue;
   text-align: center;
 }
 .p1score{
+  position: absolute;
 
 }
 .p2score{
-  left: 1050px;
-  position: fixed;
-
+  left: 150px;
+  position: absolute;
 }
