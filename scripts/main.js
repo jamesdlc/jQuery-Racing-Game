@@ -11,6 +11,7 @@ $(document).ready(function(){
     $(".p2sizing").removeClass("losing");
     $(".p1sizing").addClass("starting");
     $(".p2sizing").addClass("starting");
+    $(".showWinner").text("");
   });
 });
 //TODO: add player input
