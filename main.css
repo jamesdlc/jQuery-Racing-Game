@@ -12,15 +12,13 @@ body{
   margin-left: auto;
   margin-right: auto;
 }
-/*.scoreboard{
-  top: 420px;
+.scoreboard{
+  top: 300px;
   left: 1050px;
-  position: relative;
   height: 250px;
   width: 300px;
-  background-color: blue;
   text-align: center;
-}*/
+}
 .p1sizing{
   top: 205px;
   position: fixed;
@@ -48,16 +46,17 @@ body{
 .showWinner{
   position: fixed;
   top: 500px;
-  left: 530px;
+  left: 480px;
   font-size: 50px;
 }
-/*.p1score{
+.p1score{
+  left: 30px;
   position: absolute;
 }
 .p2score{
-  left: 150px;
+  left: 180px;
   position: absolute;
-}*/
+}
 .starting{
   content:url(pictures/startingkhaled.png);
 }
