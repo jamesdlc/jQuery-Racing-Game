@@ -2,14 +2,14 @@
 body{
   background-color: black;
 }
-.p1{
+.p1art{
   top: 205px;
   position: fixed;
   left: 0px;
   height: 90px;
   width: 90px;
 }
-.p2{
+.p2art{
   top: 305px;
   position: fixed;
   left: 0px;
@@ -35,10 +35,6 @@ body{
 .winning{
   content:url(pictures/winningkhaled.png);
 }
-
-.btn{
-  top: 700px;
-}
 .score{
   top: 420px;
   left: 1050px;
@@ -55,4 +51,9 @@ body{
 .p2score{
   left: 150px;
   position: absolute;
+}
+button{
+  position:fixed;
+  color:white;
+  top: 600px;
 }
